@@ -1,25 +1,24 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import './App.css'
+import ListUserComponent from "./user/ListUserComponent"
+import AddUserComponent from "./user/AddUserComponent"
+import EditUserComponent from "./user/EditUserComponent"
+import { Router, Route, Switch } from 'react-router-dom'
+import Container from '@material-ui/core/Container'
 
-function App() {
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container maxWidth="md">
+      <Router>
+        <Switch>
+            <Route path="/" exact component={ListUserComponent} />
+            <Route path="/users" component={ListUserComponent} />
+            <Route path="/add-user" component={AddUserComponent} />
+            <Route path="/edit-user" component={EditUserComponent} />
+        </Switch>
+      </Router>
+    </Container>
   );
 }
 
