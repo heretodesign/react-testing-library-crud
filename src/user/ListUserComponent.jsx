@@ -95,5 +95,6 @@ export default class ListUserComponent extends Component {
 
 const style = {
     display: 'flex',
-    justifyContent: 'center'
+    justifyContent: 'center',
+    marginTop: '30px'
 }

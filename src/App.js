@@ -9,7 +9,7 @@ import Navbar from './component/Navbar'
 
 const App = () => {
   return (
-    <Container maxWidth="md">
+    <Container maxWidth="md" style={home}>
       <Navbar />
       <Router>
         <Switch>
@@ -21,6 +21,10 @@ const App = () => {
       </Router>
     </Container>
   );
+}
+
+const home = {
+  marginTop: '2px'
 }
 
 export default App;

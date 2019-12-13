@@ -74,5 +74,6 @@ export default class EditUserComponent extends Component {
 
 const style ={
     display: 'flex',
-    justifyContent: 'center'
+    justifyContent: 'center',
+    marginTop: '30px'
 }
