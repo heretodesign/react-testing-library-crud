@@ -1,0 +1,7 @@
+npm install --save-dev @testing-library/jest-dom
+npm install --save-dev @testing-library/react
+
+https://www.npmtrends.com/enzyme-vs-react-testing-library
+
+yarn add @material-ui/core @material-ui/icons
+
